@@ -292,21 +292,21 @@ public class AppUpdater implements IAppUpdater {
     @Override
     public AppUpdater setButtonUpdateClickListener(final DialogInterface.OnClickListener clickListener) {
         btnUpdateClickListener = clickListener;
-        System.exit(0);
+        finish();
         return this;
     }
 
     @Override
     public AppUpdater setButtonDismissClickListener(final DialogInterface.OnClickListener clickListener) {
         btnDismissClickListener = clickListener;
-        System.exit(0);
+        finish();
         return this;
     }
 
     @Override
     public AppUpdater setButtonDoNotShowAgainClickListener(final DialogInterface.OnClickListener clickListener) {
         btnDisableClickListener = clickListener;
-        System.exit(0);
+        finish();
         return this;
     }
 
